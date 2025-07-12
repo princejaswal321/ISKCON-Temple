@@ -1,0 +1,61 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #4CAF50;
+}
+.tabs button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.tab {
+  padding: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.home-banner {
+  background: url('radha-krishna.jpg') center/cover no-repeat;
+  height: 700px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  padding-top: 20px;
+}
+#qrCodeContainer canvas {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#userDetailsTab {
+  background: url('radha-krishna.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 20px;
+  min-height: 700px;
+}
+
+
+
+/* Style inputs for readability */
+#userDetailsTab form input,
+#userDetailsTab form label,
+
+
+
+
+#userDetailsTab form label,
+#quizTab form label {
+  margin-top: 10px;
+}
+
