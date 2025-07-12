@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janmashtami Quiz 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tabs">
+    <button onclick="showTab('homeTab')">🏠 Welcome</button>
+    <button onclick="showTab('userDetailsTab')">🧍 User Details</button>
+    <button onclick="showTab('quizTab')">📝 Quiz</button>
+  </div>
+
+  <div id="homeTab" class="tab">
+    <div class="home-banner">
+      <h1>Gopi Dots Challenge 2025</h1>
+      <p>Organised by ISKCON Sydney</p>
+      <p>Date: August 16, 2025</p>
+      <p>Location: 180 Falcon St, North Sydney NSW 2060</p>
+      <div id="qrCodeContainer"></div>
+    </div>
+  </div>
+
+  <div id="userDetailsTab" class="tab" style="display:none;">
+    <h2>User Details</h2>
+    <form id="userForm">
+      <label>First Name: <input type="text" name="firstName" required></label>
+      <label>Last Name: <input type="text" name="lastName" required></label>
+      <label>Address Line 1: <input type="text" name="address1" required></label>
+      <label>Address Line 2: <input type="text" name="address2"></label>
+      <label>State: <input type="text" name="state" required></label>
+      <label>Postal Code: <input type="text" name="postalCode" required></label>
+      <label>Country: <input type="text" name="country" required value="Australia"></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Phone Number: <input type="tel" name="phone" required></label>
+    </form>
+  </div>
+
+  <div id="quizTab" class="tab" style="display:none;">
+    <h2>Quiz Questions</h2>
+    <form id="quizForm">
+      <div id="questionsContainer"></div>
+      <button type="submit">Submit Quiz</button>
+    </form>
+
+    <!-- Admin button to reveal CSV download -->
+    <button id="adminShowBtn" onclick="askAdminPassword()">Admin: Show Results</button>
+    <button id="downloadCSVBtn" onclick="downloadCSV()" style="display:none;">Download CSV</button>
+
+    <div id="scoreContainer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
